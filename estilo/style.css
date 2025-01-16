@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --cor0: #000;
+    --cor1: #fff;
+
+    --fonte-top: "Passion One", serif;
+    --fonte-prin: "Sriracha", serif;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: var(--cor0);
+    color: var(--cor1);
+    font-family: var(--fonte-top);
+    padding: 70px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+header h1{
+    font-size: 10vw;
+}
+
+header p{
+    font-size: 1.2em;
+    font-family: var(--fonte-padrao);
+}
+
+header p > a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bolder;
+    font-family: var(--fonte-top);
+}
+
+header p > a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--fonte-prin);
+    background-color: var(--cor1);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 3.5vw;
+}
+
+section.imagem{
+    background-color: darkgray;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.466);
+    text-shadow: 1px 1px 0px var(--cor0);
+    color: var(--cor1);
+    display: inline-block;
+    padding: 5px;
+}
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+}
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+}
+
+footer{
+    background-color: var(--cor0);
+    color: var(--cor1);
+    font-family: var(--fonte-prin);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+footer p> a, abbr{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer p> a:hover{
+    text-decoration: underline;
+}
